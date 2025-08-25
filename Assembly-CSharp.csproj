@@ -48,10 +48,12 @@
     <Analyzer Include="/home/zsmith204/Unity/Hub/Editor/6000.0.56f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/CookableController.cs" />
     <Compile Include="Assets/Scripts/PointToMouse.cs" />
     <Compile Include="Assets/Scripts/GrabController.cs" />
     <Compile Include="Assets/Scripts/MouseOverController.cs" />
     <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/StationController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
