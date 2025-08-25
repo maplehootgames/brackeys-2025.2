@@ -163,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8940086669706261899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6397c705b38930bd9ac34e28e611e39d, type: 3}
+  m_Script: {fileID: 11500000, guid: 65b31b5f10d200a788404cd5b9ba44a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2822428947944188292
@@ -175,6 +175,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8940086669706261899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976d70e1b277a84719630995d3868b01, type: 3}
+  m_Script: {fileID: 11500000, guid: e21a8a5aaa2a4920f93f706b3edcf0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cookingStage: 0
+  toppingState: 0
