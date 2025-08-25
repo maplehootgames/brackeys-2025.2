@@ -7,12 +7,24 @@ public class CookStationController : MonoBehaviour
     StatusController dishbase;
 
     void OnTriggerEnter2D(Collider2D collider) {
-        dishbase = collider.gameObject.GetComponent<StatusController>();
-        cookTimerActive = true;
+        if (collider.gameObject.layer == 6)
+        {
+            Debug.Log("trigger enter called");
+
+            if (cookTimerActive == true) {
+                cookTimerValue += 1;
+            }
+            dishbase = collider.gameObject.GetComponent<StatusController>();
+            cookTimerActive = true;
+        }
     }
-    void OnTriggerExit2D() {
-        cookTimerValue = 0;
-        cookTimerActive = false;
+    void OnTriggerExit2D(Collider2D collider) {
+        if (collider.gameObject.layer == 6)
+        {
+            Debug.Log("Collision Exit Called");
+            cookTimerValue = 0;
+            cookTimerActive = false;
+        }
     }
 	void FixedUpdate() {
 		if (cookTimerValue == 350) {
