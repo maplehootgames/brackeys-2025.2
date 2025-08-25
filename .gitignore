@@ -4,7 +4,6 @@
 /Library
 /.vscode
 
-*.meta
 *.sln
 *.csproj
 
