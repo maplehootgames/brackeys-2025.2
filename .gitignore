@@ -3,3 +3,6 @@
 /UserSettings
 /Library
 *.meta
+*.sln
+*.csproj
+
