@@ -2,16 +2,22 @@ using UnityEngine;
 
 public class BaseStationController : MonoBehaviour
 {
-    GameObject Parent;
     public GameObject Prefab;
+    GrabController GrabController;
+    
 
     void Start () {
-        Parent = GameObject.Find("Player");
+        GrabController = GameObject.Find("Grab Point").GetComponent<GrabController>();
     }
     void OnMouseOver () {
-        if (Input.GetMouseButtonDown(0)) {
-            Instantiate(Prefab, Parent.transform);
-        } else if (Input.GetMouseButtonDown(1)) {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject spawnedBase = Instantiate(Prefab);
+            GrabController.Grab(spawnedBase);
+    
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
             // Do right-click stuff here
         }
     }
