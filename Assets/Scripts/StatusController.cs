@@ -7,9 +7,9 @@ public class StatusController : MonoBehaviour
     public Sprite cookedSprite;
     public int cookingStage = 0;
     public bool toppingState = false;
+    public string toppingName = "";
+    public GameObject toppingGO;
     SpriteRenderer spriteRenderer;
-
-    
 
     void Start()
     {
@@ -35,8 +35,12 @@ public class StatusController : MonoBehaviour
     {
         cookingStage += 1;
     }
-    public void addTopping () {
+    public void addTopping(GameObject topping)
+    {
         toppingState = true;
+        toppingName = topping.name;
+        toppingGO = topping;
+        
     }
     public void burnOut() {
         Destroy(transform.gameObject);
