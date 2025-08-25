@@ -2,6 +2,8 @@
 /Logs
 /UserSettings
 /Library
+/.vscode
+
 *.meta
 *.sln
 *.csproj
