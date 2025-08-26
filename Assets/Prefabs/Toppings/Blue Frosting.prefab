@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6885800662694903216}
   - component: {fileID: 4628734951635404758}
   m_Layer: 0
-  m_Name: Test Topping
+  m_Name: Blue Frosting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: -9109143945336424715, guid: b52ae860c8009bb119f526aa5a8a1806, type: 3}
+  m_Sprite: {fileID: 3360075999935392474, guid: b52ae860c8009bb119f526aa5a8a1806, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
