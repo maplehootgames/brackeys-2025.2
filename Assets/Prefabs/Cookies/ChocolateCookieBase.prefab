@@ -120,7 +120,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -169,3 +169,5 @@ MonoBehaviour:
   cookedSprite: {fileID: -1615675755, guid: b84a1ce1546a73ff1a28625b8912c3f2, type: 3}
   cookingStage: 0
   toppingState: 0
+  toppingName: 
+  toppingGO: {fileID: 0}
