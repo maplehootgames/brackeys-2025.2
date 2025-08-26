@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5294277475728188078}
   - component: {fileID: -1296193879489755139}
   m_Layer: 0
-  m_Name: ToppingStation
+  m_Name: Chocolate Frosting Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3966044189379602213, guid: e4bc435cb9c133b3fa38beb9de1bb2d8, type: 3}
+  m_Sprite: {fileID: 897543655209297599, guid: 44d1cbf51990cf3daad1b7ccc33af73a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9aae4c5c42d86bf5bf58727c84ead0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topping: {fileID: 7565723058500510887, guid: 296cceb5b9af09abc8f1530de6c66f43, type: 3}
 --- !u!50 &-1296193879489755139
 Rigidbody2D:
   serializedVersion: 5
