@@ -46,7 +46,7 @@ public class GrabController : MonoBehaviour
         par_pos = transform.parent.gameObject.transform.position;
 		mos_pos = Input.mousePosition;
 		mouse_wp = (new Vector2 (Camera.main.ScreenToWorldPoint(mos_pos).x,Camera.main.ScreenToWorldPoint(mos_pos).y)  - par_pos);
-		Vector2 position = new Ray2D(par_pos, mouse_wp).GetPoint(0.7f);
+		Vector2 position = new Ray2D(par_pos, mouse_wp).GetPoint(0.8f);
         transform.position = position;
     }
 }
