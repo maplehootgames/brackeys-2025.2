@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5661519088787372573}
   - component: {fileID: 640094935452025254}
   - component: {fileID: 1331006476196932694}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cook Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b718c7fedb46eb4519ef5db16da94dea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookTimerValue: 0
 --- !u!50 &1331006476196932694
 Rigidbody2D:
   serializedVersion: 5

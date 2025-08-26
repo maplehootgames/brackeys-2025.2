@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class StatusController : MonoBehaviour
 {
-
+    public bool cookTimerActive;
+    int cookTimerValue;
     public Sprite rawSprite;
     public Sprite cookedSprite;
     public int cookingStage = 0;
@@ -47,9 +48,32 @@ public class StatusController : MonoBehaviour
     {
         Destroy(transform.gameObject);
     }
+<<<<<<< HEAD:Assets/Scripts/Cookie Scripts/StatusController.cs
 
     public string[] getCookie()
     {
         return new string[] {baseType, toppingName};
     }
+=======
+    void FixedUpdate() {
+		if (cookTimerValue == 350) {
+            cookIncrement();
+            cookTimerValue += 1;
+		} else if (cookTimerValue == 700) {
+			cookIncrement();
+            cookTimerValue += 1;
+		} else if (cookTimerValue == 1050) {
+            burnOut();
+            cookTimerActive = false;
+        } else if (cookTimerActive == true) {
+            cookTimerValue += 1;
+        }
+	}
+    void OnTriggerExit2D(Collider2D collider) {
+        if (collider.gameObject.layer == 7) {
+            cookTimerValue = 0;
+            cookTimerActive = false;
+        }
+    }    
+>>>>>>> main:Assets/Scripts/StatusController.cs
 }
