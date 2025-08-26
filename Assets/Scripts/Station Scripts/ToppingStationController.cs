@@ -14,6 +14,7 @@ public class ToppingStation : MonoBehaviour
             if (dishbase.cookingStage > 0 && dishbase.toppingState == false)
             {
                 GameObject toppingGO = Instantiate(topping, dishbase.gameObject.transform.position, Quaternion.Euler(0, 0, 0), dishbase.gameObject.transform);
+                toppingGO.name = topping.name;
                 dishbase.addTopping(toppingGO);
             }
         }

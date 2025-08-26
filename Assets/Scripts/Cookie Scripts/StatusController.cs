@@ -14,7 +14,7 @@ public class StatusController : MonoBehaviour
 
     void Start()
     {
-         spriteRenderer = transform.gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer = transform.gameObject.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -28,10 +28,10 @@ public class StatusController : MonoBehaviour
         }
         else if (cookingStage >= 2)
         {
-            burnOut();   
+            burnOut();
         }
     }
-    
+
     public void cookIncrement()
     {
         cookingStage += 1;
@@ -41,9 +41,15 @@ public class StatusController : MonoBehaviour
         toppingState = true;
         toppingName = topping.name;
         toppingGO = topping;
-        
+
     }
-    public void burnOut() {
+    public void burnOut()
+    {
         Destroy(transform.gameObject);
+    }
+
+    public string[] getCookie()
+    {
+        return new string[] {baseType, toppingName};
     }
 }

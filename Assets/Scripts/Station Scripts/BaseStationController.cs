@@ -17,6 +17,8 @@ public class BaseStationController : MonoBehaviour
             {
                 
             GameObject spawnedBase = Instantiate(Prefab);
+            spawnedBase.name = Prefab.name;
+
             GrabController.Grab(spawnedBase);
             }
         }
