@@ -2,50 +2,36 @@ using UnityEngine;
 
 public class StatusController : MonoBehaviour
 {
-    public bool cookTimerActive;
     int cookTimerValue;
-    public Sprite rawSprite;
-    public Sprite cookedSprite;
-    public int cookingStage = 0;
-    public bool toppingState = false;
-    public string toppingName = "";
-    public GameObject toppingGO;
+    int cookingStage = 0;
+    bool toppingState = false;
+    string toppingName = "";
     SpriteRenderer spriteRenderer;
 
-    void Start()
-    {
+    public bool cookTimerActive;
+    public Sprite rawSprite;
+    public Sprite cookedSprite;
+
+    void Start() {
          spriteRenderer = transform.gameObject.GetComponent<SpriteRenderer>();
     }
-    void Update()
-    {
-        if (cookingStage == 0)
-        {
+
+    void Update() {
+        if (cookingStage == 0) {
             spriteRenderer.sprite = rawSprite;
-        }
-        else if (cookingStage == 1)
-        {
+        } else if (cookingStage == 1) {
             spriteRenderer.sprite = cookedSprite;
-        }
-        else if (cookingStage >= 2)
-        {
-            burnOut();   
         }
     }
     
-    public void cookIncrement()
-    {
+    void cookIncrement() {
         cookingStage += 1;
     }
-    public void addTopping(GameObject topping)
-    {
-        toppingState = true;
-        toppingName = topping.name;
-        toppingGO = topping;
-        
-    }
-    public void burnOut() {
+
+    void burnOut() {
         Destroy(transform.gameObject);
     }
+
     void FixedUpdate() {
 		if (cookTimerValue == 350) {
             cookIncrement();
@@ -60,10 +46,19 @@ public class StatusController : MonoBehaviour
             cookTimerValue += 1;
         }
 	}
+
     void OnTriggerExit2D(Collider2D collider) {
         if (collider.gameObject.layer == 7) {
             cookTimerValue = 0;
             cookTimerActive = false;
+        }
+    }
+
+    public void addTopping(GameObject topping) {
+        if (cookingStage > 0 && toppingState == false) {
+            GameObject toppingGameObject = Instantiate(topping, gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
+            toppingState = true;
+            toppingName = toppingGameObject.name;
         }
     }    
 }
