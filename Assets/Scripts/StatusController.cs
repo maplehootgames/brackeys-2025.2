@@ -5,10 +5,10 @@ public class StatusController : MonoBehaviour
     int cookTimerValue;
     int cookingStage = 0;
     bool toppingState = false;
-    string toppingName = "";
     SpriteRenderer spriteRenderer;
 
     public bool cookTimerActive;
+    public string toppingName = "";
     public Sprite rawSprite;
     public Sprite cookedSprite;
 
@@ -17,6 +17,10 @@ public class StatusController : MonoBehaviour
     }
 
     void Update() {
+        if (toppingName != "" && cookingStage > 0 && toppingState == false) {
+            GameObject toppingGameObject = Instantiate((GameObject)Resources.Load(toppingName), gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
+            toppingState = true;
+        }
         if (cookingStage == 0) {
             spriteRenderer.sprite = rawSprite;
         } else if (cookingStage == 1) {
@@ -53,12 +57,4 @@ public class StatusController : MonoBehaviour
             cookTimerActive = false;
         }
     }
-
-    public void addTopping(GameObject topping) {
-        if (cookingStage > 0 && toppingState == false) {
-            GameObject toppingGameObject = Instantiate(topping, gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
-            toppingState = true;
-            toppingName = toppingGameObject.name;
-        }
-    }    
 }

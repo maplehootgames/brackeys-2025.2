@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9aae4c5c42d86bf5bf58727c84ead0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topping: {fileID: 7565723058500510887, guid: 77a8ad9becc83f9e987da895efadda4c, type: 3}
+  topping: Blue Frosting
 --- !u!50 &-1296193879489755139
 Rigidbody2D:
   serializedVersion: 5
