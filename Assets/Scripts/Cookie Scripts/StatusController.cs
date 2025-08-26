@@ -48,13 +48,10 @@ public class StatusController : MonoBehaviour
     {
         Destroy(transform.gameObject);
     }
-<<<<<<< HEAD:Assets/Scripts/Cookie Scripts/StatusController.cs
-
     public string[] getCookie()
     {
         return new string[] {baseType, toppingName};
     }
-=======
     void FixedUpdate() {
 		if (cookTimerValue == 350) {
             cookIncrement();
@@ -75,5 +72,4 @@ public class StatusController : MonoBehaviour
             cookTimerActive = false;
         }
     }    
->>>>>>> main:Assets/Scripts/StatusController.cs
 }
