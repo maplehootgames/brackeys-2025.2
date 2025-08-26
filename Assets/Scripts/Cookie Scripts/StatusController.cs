@@ -9,6 +9,7 @@ public class StatusController : MonoBehaviour
     public bool toppingState = false;
     public string toppingName = "";
     public GameObject toppingGO;
+    public string baseType;
     SpriteRenderer spriteRenderer;
 
     void Start()
