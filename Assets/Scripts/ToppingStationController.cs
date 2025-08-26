@@ -11,8 +11,11 @@ public class ToppingStation : MonoBehaviour
         {
             dishbase = collider.gameObject.GetComponent<StatusController>();
 
-            GameObject toppingGO = Instantiate(topping, dishbase.gameObject.transform.position, Quaternion.Euler(0, 0, 0), dishbase.gameObject.transform);
-            dishbase.addTopping(toppingGO);
+            if (dishbase.cookingStage > 0 && dishbase.toppingState == false)
+            {
+                GameObject toppingGO = Instantiate(topping, dishbase.gameObject.transform.position, Quaternion.Euler(0, 0, 0), dishbase.gameObject.transform);
+                dishbase.addTopping(toppingGO);
+            }
         }
     }
 }
