@@ -12,9 +12,13 @@ public class BaseStationController : MonoBehaviour
     void OnMouseOver () {
         if (Input.GetMouseButtonDown(0))
         {
+
+            if (Vector3.Distance(GrabController.gameObject.transform.position, transform.position) < 1.1 && GrabController.grabbedGO == null)
+            {
+                
             GameObject spawnedBase = Instantiate(Prefab);
             GrabController.Grab(spawnedBase);
-    
+            }
         }
         else if (Input.GetMouseButtonDown(1))
         {
