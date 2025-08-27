@@ -3,28 +3,31 @@ using UnityEngine;
 public class StatusController : MonoBehaviour
 {
     int cookTimerValue;
-    int cookingStage = 0;
-    bool toppingState = false;
+    public int cookingStage = 0;
+    public bool toppingState = false;
     SpriteRenderer spriteRenderer;
-
     public bool cookTimerActive;
     public string toppingName = "";
     public Sprite rawSprite;
     public Sprite cookedSprite;
+    public string baseType;
 
     void Start() {
          spriteRenderer = transform.gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update() {
-        if (toppingName != "" && cookingStage > 0 && toppingState == false) {
-            GameObject toppingGameObject = Instantiate((GameObject)Resources.Load(toppingName), gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
-            toppingState = true;
-        }
-        if (cookingStage == 0) {
-            spriteRenderer.sprite = rawSprite;
-        } else if (cookingStage == 1) {
-            spriteRenderer.sprite = cookedSprite;
+        {    
+            if (toppingName != "" && cookingStage > 0 && toppingState == false)
+            {
+                GameObject toppingGameObject = Instantiate((GameObject)Resources.Load(toppingName), gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
+                toppingState = true;
+            }
+            if (cookingStage == 0) {
+                spriteRenderer.sprite = rawSprite;
+            } else if (cookingStage == 1) {
+                spriteRenderer.sprite = cookedSprite;
+            }
         }
     }
     
@@ -50,6 +53,11 @@ public class StatusController : MonoBehaviour
             cookTimerValue += 1;
         }
 	}
+
+    public string[] getCookie()
+    {
+        return new string[] {baseType, toppingName};
+    }
 
     void OnTriggerExit2D(Collider2D collider) {
         if (collider.gameObject.layer == 7) {

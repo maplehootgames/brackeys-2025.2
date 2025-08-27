@@ -165,9 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21a8a5aaa2a4920f93f706b3edcf0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cookTimerActive: 0
+  toppingName: 
   rawSprite: {fileID: 8617209476896597884, guid: 261b2c64f1d96b213806ff99519a99a7, type: 3}
   cookedSprite: {fileID: 2061350300770053666, guid: b84a1ce1546a73ff1a28625b8912c3f2, type: 3}
-  cookingStage: 0
-  toppingState: 0
-  toppingName: 
-  toppingGO: {fileID: 0}
+  baseType: Vanilla
