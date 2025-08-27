@@ -8,6 +8,8 @@ public class CustomerController : MonoBehaviour
     bool hasOrderd = false;
     public int targetNumber;
     public int reviewNumber;
+    int timerValue = 0;
+    int reviewRating = 5;
     string[] orderedCookie;
     string[] bases = new string[] { "Chip", "Chocolate", "Vanilla" };
     string[] toppings = new string[] { "Blue Frosting", "Chocolate Frosting", "Fruit", "Jam", "Pink Frosting", "Whipped Cream" };
@@ -19,8 +21,8 @@ public class CustomerController : MonoBehaviour
 
     void CompleteOrder()
     {
-        
         Debug.Log("Order Completed");
+        gameObject.transform.parent.gameObject.GetComponent<ReviewSystem>().reviewList[reviewNumber] = reviewRating;
         gameObject.transform.parent.gameObject.GetComponent<CustomerSpawnerController>().arrayOfAvailability[targetNumber] = false;
         Destroy(gameObject);
     }
@@ -37,6 +39,12 @@ public class CustomerController : MonoBehaviour
             else
             {
                 MoveToTarget();
+            }
+        } else {
+            timerValue += 1;
+            if (timerValue == 750) {
+                reviewRating -= 1;
+                timerValue = 0;
             }
         }
     }
