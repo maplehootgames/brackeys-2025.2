@@ -1,12 +1,16 @@
 using UnityEngine;
 
 public class ReviewSystem : MonoBehaviour {
+    int oldnum;
+    int oldoldnum;
+
     public int[] reviewList = new int[30];
     public int averageReview() {
-        oldnum = 0
-        for num in reviewList {
+        oldnum = 0;
+        foreach (int num in reviewList) {
             oldnum = oldoldnum;
-            oldoldnum + num = oldnum;
+            oldnum = oldoldnum + num ;
         }
+        return (int)oldnum;
     }
 }
