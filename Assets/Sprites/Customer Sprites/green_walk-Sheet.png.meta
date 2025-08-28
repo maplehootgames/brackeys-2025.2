@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 3fc225925d2d258f08eae333655d2ec8
+guid: 032170ceb0d5811feb1e0431d23bc4cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 704701254979545097
-    second: chef-Sheet_0
+      213: 4661501103200719767
+    second: green_walk-Sheet_0
   - first:
-      213: -259610046344240895
-    second: chef-Sheet_1
+      213: 3474373164020701326
+    second: green_walk-Sheet_1
   - first:
-      213: -3862754449013403862
-    second: chef-Sheet_2
+      213: -1495303177716237716
+    second: green_walk-Sheet_2
   - first:
-      213: -9002262292802378189
-    second: chef-Sheet_3
+      213: 4715144114997558479
+    second: green_walk-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,24 +105,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: 20
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chef-sheet_0
+      name: green_walk-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,16 +122,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aee0f149626184f1f9f4e2c436c706b3
-      internalID: 532390796
+      spriteID: 793de504e8af0b040800000000000000
+      internalID: 4661501103200719767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chef-sheet_1
+      name: green_walk-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -157,16 +144,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bbd4467575892c807aa78a6357b931e0
-      internalID: 1749309334
+      spriteID: e889a921cf3773030800000000000000
+      internalID: 3474373164020701326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chef-sheet_2
+      name: green_walk-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,16 +166,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9960f6b73892377688a1b721183e1208
-      internalID: 518146383
+      spriteID: c6af5bcaead9f3be0800000000000000
+      internalID: -1495303177716237716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chef-sheet_3
+      name: green_walk-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -201,10 +188,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2d669738f0878bd7aa28dd7bbf24f683
-      internalID: -1125133644
+      spriteID: fccf337379e8f6140800000000000000
+      internalID: 4715144114997558479
       vertices: []
       indices: 
       edges: []
@@ -213,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e580f7086ace0006cb1728f44d495425
+    spriteID: 177be853c699cd5fc90c25a63f0bc454
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chef-sheet_0: 532390796
-      chef-sheet_1: 1749309334
-      chef-sheet_2: 518146383
-      chef-sheet_3: -1125133644
+      green_walk-Sheet_0: 4661501103200719767
+      green_walk-Sheet_1: 3474373164020701326
+      green_walk-Sheet_2: -1495303177716237716
+      green_walk-Sheet_3: 4715144114997558479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

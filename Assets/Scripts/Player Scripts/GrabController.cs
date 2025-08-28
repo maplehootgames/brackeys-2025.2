@@ -2,7 +2,7 @@ using UnityEngine;
 public class GrabController : MonoBehaviour
 {
     public GameObject grabbedGO;
-    private Collider2D[] results = new Collider2D[1];
+    private Collider2D[] results = new Collider2D[5];
     public int grabbableLayer = 6;
     private Vector2 par_pos;
     private Vector2 mos_pos;
@@ -36,9 +36,14 @@ public class GrabController : MonoBehaviour
             return;
         } else {
             int numOverlaps = GetComponent<Collider2D>().Overlap(new ContactFilter2D().NoFilter(), results);
-            if (results[0] != null && results[0].gameObject.layer == grabbableLayer) {
-                grabbedGO = results[0].gameObject;
-                results[0] = null;
+            foreach (Collider2D collider in results)
+            {
+                if (collider != null && collider.gameObject.layer == grabbableLayer)
+                {
+                    grabbedGO = collider.gameObject;
+                    break;
+                }
+                results = new Collider2D[] {null, null, null, null, null};
             }
         }
     }
