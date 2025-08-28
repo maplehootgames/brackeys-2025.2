@@ -50,7 +50,7 @@ public class CustomerController : MonoBehaviour
     }
     string[] RandomCookie()
     {
-        string[] chosenCookie = new string[] { bases[Random.Range(0, bases.Length)], toppings[Random.Range(0, toppings.Length)] };
+        string[] chosenCookie = new string[] { bases[UnityEngine.Random.Range(0, bases.Length)], toppings[UnityEngine.Random.Range(0, toppings.Length)] };
 
         return chosenCookie;
     }
@@ -60,6 +60,7 @@ public class CustomerController : MonoBehaviour
         orderedCookie = cookie;
         Debug.Log(cookie[0] + " " + cookie[1]);
         hasOrderd = true;
+        Instantiate((GameObject)Resources.Load(cookie[0] + " " + cookie[1]), gameObject.transform.position + new Vector3 (0,1,0), Quaternion.Euler(0, 0, 0), gameObject.transform);
     }
 
     void OnTriggerEnter2D(Collider2D collider)

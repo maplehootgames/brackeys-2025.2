@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 019c8fe39022768a0b1b8d77a8a94aa0
+guid: fbb46ac25d6eb1c36844c8586f609950
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7472254467221915223
-    second: oven_0
+      213: -3306487770265377238
+    second: Sprite-0012_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -100,7 +100,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 20
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oven_0
+      name: Sprite-0012_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a979e9d6283d4890800000000000000
-      internalID: -7472254467221915223
+      spriteID: a26a82734eefc12d0800000000000000
+      internalID: -3306487770265377238
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      oven_0: -7472254467221915223
+      Sprite-0012_0: -3306487770265377238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
