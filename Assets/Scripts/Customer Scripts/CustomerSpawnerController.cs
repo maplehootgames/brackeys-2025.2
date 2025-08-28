@@ -5,8 +5,8 @@ public class CustomerSpawnerController : MonoBehaviour
 
     public GameObject customerSprite;
     int reviewNumber = 0;
-    public bool[] arrayOfAvailability = new bool[5];
-    GameObject[] arrayOfGameObjects = new GameObject[5];
+    public bool[] arrayOfAvailability = new bool[6];
+    GameObject[] arrayOfGameObjects = new GameObject[6];
     int spawnTime = 10;
     int spawnTimer = 0;
 
@@ -16,6 +16,7 @@ public class CustomerSpawnerController : MonoBehaviour
         arrayOfGameObjects[2] = GameObject.Find("Target3");
         arrayOfGameObjects[3] = GameObject.Find("Target4");
         arrayOfGameObjects[4] = GameObject.Find("Target5");
+        arrayOfGameObjects[5] = GameObject.Find("Target6");
     }
     GameObject whereShouldIGo(int num) {
         return arrayOfGameObjects[num];
@@ -24,12 +25,11 @@ public class CustomerSpawnerController : MonoBehaviour
         int whereAmI = 0;
         foreach (bool trfls in arrayOfAvailability) {
             if (trfls == false) {
-                
                 arrayOfAvailability[whereAmI] = true;
                 return whereAmI;
             }
             whereAmI += 1;
-            if (whereAmI == 5) {
+            if (whereAmI == 6) {
                 return -1;
             }
         }
