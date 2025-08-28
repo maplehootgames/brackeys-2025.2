@@ -122,12 +122,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chef-Sheet_0
+      name: chef-sheet_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 24
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -135,76 +135,76 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 908e3d7ce0a97c900800000000000000
-      internalID: 704701254979545097
+      spriteID: aee0f149626184f1f9f4e2c436c706b3
+      internalID: 532390796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chef-Sheet_1
+      name: chef-sheet_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 24
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 101678fc90ea56cf0800000000000000
-      internalID: -259610046344240895
+      spriteID: bbd4467575892c807aa78a6357b931e0
+      internalID: 1749309334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chef-Sheet_2
+      name: chef-sheet_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 24
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2f0ffb5b4db46ac0800000000000000
-      internalID: -3862754449013403862
+      spriteID: 9960f6b73892377688a1b721183e1208
+      internalID: 518146383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chef-Sheet_3
+      name: chef-sheet_3
       rect:
         serializedVersion: 2
-        x: 101
+        x: 96
         y: 0
-        width: 24
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 336ee96042a811380800000000000000
-      internalID: -9002262292802378189
+      spriteID: 2d669738f0878bd7aa28dd7bbf24f683
+      internalID: -1125133644
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e580f7086ace0006cb1728f44d495425
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chef-Sheet_0: 704701254979545097
-      chef-Sheet_1: -259610046344240895
-      chef-Sheet_2: -3862754449013403862
-      chef-Sheet_3: -9002262292802378189
+      chef-sheet_0: 532390796
+      chef-sheet_1: 1749309334
+      chef-sheet_2: 518146383
+      chef-sheet_3: -1125133644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
