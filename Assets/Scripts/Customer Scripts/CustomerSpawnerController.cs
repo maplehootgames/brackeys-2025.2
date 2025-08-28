@@ -3,7 +3,7 @@ using UnityEngine;
 public class CustomerSpawnerController : MonoBehaviour
 {
 
-    public GameObject customerSprite;
+    public GameObject[] customerSprite = new GameObject[5];
     int reviewNumber = 0;
     public bool[] arrayOfAvailability = new bool[6];
     GameObject[] arrayOfGameObjects = new GameObject[6];
@@ -37,7 +37,7 @@ public class CustomerSpawnerController : MonoBehaviour
     }
     
     void spawnCustomer() {
-        GameObject customer = Instantiate(customerSprite, gameObject.transform);
+        GameObject customer = Instantiate(customerSprite[Random.Range(0, 3)], gameObject.transform);
         CustomerController customerController = customer.gameObject.GetComponent<CustomerController>();
         int targetNumber = whereShouldIGoNum();
         customerController.targetNumber = targetNumber;

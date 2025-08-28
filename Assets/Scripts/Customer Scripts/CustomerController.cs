@@ -4,6 +4,7 @@ public class CustomerController : MonoBehaviour
 {
 
     public GameObject targetSpace;
+    public Animator animator;
     float moveSpeed = 0.03F;
     bool hasOrderd = false;
     public int targetNumber;
@@ -14,7 +15,18 @@ public class CustomerController : MonoBehaviour
     string[] bases = new string[] { "Chip", "Chocolate", "Vanilla" };
     string[] toppings = new string[] { "Blue Frosting", "Chocolate Frosting", "Fruit", "Jam", "Pink Frosting", "Whipped Cream" };
 
+    void Start()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
+
     void MoveToTarget() {
+
+        if (animator.GetBool("isMoving") == false)
+        {
+            animator.SetBool("isMoving", true);
+        }
+
         Vector3 targetDirection = targetSpace.transform.position - transform.position;
         transform.Translate(targetDirection.normalized * moveSpeed);
     }
@@ -35,6 +47,8 @@ public class CustomerController : MonoBehaviour
             if (Vector3.Distance(targetSpace.transform.position, transform.position) < 0.2)
             {
                 Order(RandomCookie());
+
+                animator.SetBool("isMoving", false);
             }
             else
             {
