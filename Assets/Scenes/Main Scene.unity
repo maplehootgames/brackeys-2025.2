@@ -791,7 +791,7 @@ Transform:
   m_GameObject: {fileID: 75284393}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -3.5, z: -0.0720204}
+  m_LocalPosition: {x: 1.5, y: -3.2, z: -0.0720204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2009,7 +2009,7 @@ Transform:
   m_GameObject: {fileID: 760327702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -3.5, z: -0.0720204}
+  m_LocalPosition: {x: 2.5, y: -3.2, z: -0.0720204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2390,7 +2390,7 @@ Transform:
   m_GameObject: {fileID: 1210331247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -3.5, z: -0.0720204}
+  m_LocalPosition: {x: -0.5, y: -3.2, z: -0.0720204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2453,6 +2453,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomerSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+      propertyPath: customerSprite.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+      propertyPath: 'customerSprite.Array.data[0]'
+      value: 
+      objectReference: {fileID: 7215104456728604294, guid: 349170bcea9ac7aafb83ab9cf15f3c2d, type: 3}
+    - target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+      propertyPath: 'customerSprite.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7215104456728604294, guid: aa9b268cc03c9a67cbaa387b575e4c6c, type: 3}
+    - target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+      propertyPath: 'customerSprite.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7215104456728604294, guid: 96941caeae3dbe967970e26b4338f513, type: 3}
+    - target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+      propertyPath: 'customerSprite.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7215104456728604294, guid: c4f5f8f3fc2c7a246b1a7e5ad284b4e3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2517,7 +2537,7 @@ Transform:
   m_GameObject: {fileID: 1396287747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -3.5, z: -0.0720204}
+  m_LocalPosition: {x: -1.5, y: -3.2, z: -0.0720204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2667,7 +2687,7 @@ Transform:
   m_GameObject: {fileID: 1823844213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -3.5, z: -0.0720204}
+  m_LocalPosition: {x: 0.5, y: -3.2, z: -0.0720204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2755,7 +2775,7 @@ Transform:
   m_GameObject: {fileID: 1843246577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -3.5, z: 0}
+  m_LocalPosition: {x: -2.5, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
