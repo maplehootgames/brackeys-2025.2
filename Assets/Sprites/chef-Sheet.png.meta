@@ -112,9 +112,9 @@ TextureImporter:
       name: chef-Sheet_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 24
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: chef-Sheet_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 24
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: chef-Sheet_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 24
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: chef-Sheet_3
       rect:
         serializedVersion: 2
-        x: 101
+        x: 96
         y: 0
-        width: 24
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 661ac79214ad31290a6d67ab1eae2dff
     internalID: 0
     vertices: []
     indices: 
