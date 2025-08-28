@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1562151500214181911
+--- !u!1 &2183832793742833620
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7975043233332763527}
-  - component: {fileID: 6160307573527925049}
-  - component: {fileID: 8480468602386510545}
+  - component: {fileID: 806741846261779134}
+  - component: {fileID: 4108994526393862499}
+  - component: {fileID: 4785545590522882837}
   m_Layer: 0
   m_Name: CustomerSpawner
   m_TagString: Untagged
@@ -18,45 +18,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7975043233332763527
+--- !u!4 &806741846261779134
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562151500214181911}
+  m_GameObject: {fileID: 2183832793742833620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6160307573527925049
+--- !u!114 &4108994526393862499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562151500214181911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a99d3537a7594cdc5bd7d29cfd47734d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customerSprite: {fileID: 7215104456728604294, guid: c4f5f8f3fc2c7a246b1a7e5ad284b4e3, type: 3}
-  arrayOfAvailability: 0000000000
---- !u!114 &8480468602386510545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562151500214181911}
+  m_GameObject: {fileID: 2183832793742833620}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 324dafe9d462918d6aeeae0782d90cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   reviewList: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &4785545590522882837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2183832793742833620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99d3537a7594cdc5bd7d29cfd47734d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 7215104456728604294, guid: c4f5f8f3fc2c7a246b1a7e5ad284b4e3, type: 3}
+  arrayOfAvailability: 000000000000
