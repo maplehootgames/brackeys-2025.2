@@ -392,9 +392,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 204562092819114792, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204562092819114792, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -9002262292802378189, guid: 3fc225925d2d258f08eae333655d2ec8, type: 3}
+    - target: {fileID: 204562092819114792, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 204562092819114792, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204562092819114792, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_SortingOrder
+      value: 32767
+      objectReference: {fileID: 0}
+    - target: {fileID: 204562092819114792, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1389755151
+      objectReference: {fileID: 0}
     - target: {fileID: 5343351064859329490, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -405,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5343351064859329490, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5343351064859329490, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
       propertyPath: m_LocalPosition.y
@@ -462,6 +482,14 @@ PrefabInstance:
     - target: {fileID: 8608849775417974124, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134585625261202699, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134585625261202699, guid: 164e2eaee9662692c97dcfa91654fb14, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
