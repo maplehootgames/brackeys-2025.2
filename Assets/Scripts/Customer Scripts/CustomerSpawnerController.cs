@@ -7,7 +7,7 @@ public class CustomerSpawnerController : MonoBehaviour
     int reviewNumber = 0;
     public bool[] arrayOfAvailability = new bool[6];
     GameObject[] arrayOfGameObjects = new GameObject[6];
-    int spawnTime = 10;
+    int spawnTime = 15;
     int spawnTimer = 0;
 
     void Start() {
