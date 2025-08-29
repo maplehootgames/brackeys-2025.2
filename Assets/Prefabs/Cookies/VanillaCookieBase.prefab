@@ -165,6 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21a8a5aaa2a4920f93f706b3edcf0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireParticle: {fileID: 4956373489639616527, guid: 3bec7341736e0ce9fb382103bfaebe4d, type: 3}
+  cookingStage: 0
+  toppingState: 0
   cookTimerActive: 0
   toppingName: 
   rawSprite: {fileID: 8617209476896597884, guid: 261b2c64f1d96b213806ff99519a99a7, type: 3}

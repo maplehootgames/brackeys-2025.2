@@ -3,6 +3,7 @@ using UnityEngine;
 public class StatusController : MonoBehaviour
 {
     int cookTimerValue;
+    public GameObject fireParticle;
     public int cookingStage = 0;
     public bool toppingState = false;
     SpriteRenderer spriteRenderer;
@@ -36,6 +37,7 @@ public class StatusController : MonoBehaviour
     }
 
     void burnOut() {
+        Instantiate(fireParticle, transform.position, transform.rotation);
         Destroy(transform.gameObject);
     }
 

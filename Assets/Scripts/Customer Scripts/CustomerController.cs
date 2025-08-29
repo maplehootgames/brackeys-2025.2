@@ -4,8 +4,8 @@ public class CustomerController : MonoBehaviour
 {
 
     public GameObject targetSpace;
-    public ParticleSystem moneyParticle;
-    public ParticleSystem badParticle;
+    public GameObject moneyParticle;
+    public GameObject badParticle;
     public Animator animator;
     float moveSpeed = 0.03F;
     bool hasOrderd = false;
@@ -87,14 +87,14 @@ public class CustomerController : MonoBehaviour
             Debug.Log(cookieProfile[0] + " " + cookieProfile[1]);
             if (statusController != null && cookieProfile[0] + cookieProfile[1] == orderedCookie[0] + orderedCookie[1])
             {
-                moneyParticle.Play(true);
+                Instantiate(moneyParticle, transform.position, transform.rotation);
                 Debug.Log("Order Correct");
                 Destroy(collider.gameObject);
                 CompleteOrder();
             }
             else if (statusController != null && cookieProfile != orderedCookie)
             {
-                badParticle.Play(true);
+                Instantiate(badParticle, transform.position, transform.rotation);
                 Debug.Log("Order Incorrect");
                 CompleteOrder();
             }
