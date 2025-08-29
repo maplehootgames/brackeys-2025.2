@@ -2578,7 +2578,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641664166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+        m_TargetAssemblyTypeName: CustomerSpawnerController, Assembly-CSharp
+        m_MethodName: addToQue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 24
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &641664166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3229,7 +3241,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1008558391}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+        m_TargetAssemblyTypeName: CustomerSpawnerController, Assembly-CSharp
+        m_MethodName: addToQue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1008558391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4080,7 +4104,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1566574750}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+        m_TargetAssemblyTypeName: CustomerSpawnerController, Assembly-CSharp
+        m_MethodName: addToQue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1566574750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4308,6 +4344,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82773a1c7bd366724b4505019c133365, type: 3}
+--- !u!114 &1736814002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4785545590522882837, guid: ea6904624c29706dba66acb5d0f8942a, type: 3}
+  m_PrefabInstance: {fileID: 1335255924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99d3537a7594cdc5bd7d29cfd47734d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1803226843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6077320683354069297, guid: a898ba8d4276012eba762e729e006a1f, type: 3}
@@ -4394,7 +4441,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1806819624}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736814002}
+        m_TargetAssemblyTypeName: CustomerSpawnerController, Assembly-CSharp
+        m_MethodName: addToQue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1806819624
 MonoBehaviour:
   m_ObjectHideFlags: 0
