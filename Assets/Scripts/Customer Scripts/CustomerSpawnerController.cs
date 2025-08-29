@@ -10,9 +10,12 @@ public class CustomerSpawnerController : MonoBehaviour
     int spawnTime = 10;
     int spawnTimer = 0;
     public float reviewModifier = 1;
-    int que;
+    public int que;
     ReviewSystem reviewer;
 
+    public void addToQue(int queadd) {
+        que += queadd;
+    }
     void Start() {
         arrayOfGameObjects[0] = GameObject.Find("Target1");
         arrayOfGameObjects[1] = GameObject.Find("Target2");
