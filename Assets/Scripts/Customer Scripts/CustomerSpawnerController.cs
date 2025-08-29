@@ -37,6 +37,7 @@ public class CustomerSpawnerController : MonoBehaviour
     }
     
     void spawnCustomer() {
+        if (reviewNumber == 30) { reviewNumber = 0; }
         GameObject customer = Instantiate(customerSprite[Random.Range(0, 3)], gameObject.transform);
         CustomerController customerController = customer.gameObject.GetComponent<CustomerController>();
         int targetNumber = whereShouldIGoNum();

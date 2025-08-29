@@ -33,8 +33,9 @@ public class CustomerController : MonoBehaviour
         transform.Translate(targetDirection.normalized * moveSpeed);
     }
 
-    void CompleteOrder()
+    void CompleteOrder(bool isCorrect)
     {
+        if (isCorrect == false) { reviewRating = 0;}
         Debug.Log("Order Completed");
         gameObject.transform.parent.gameObject.GetComponent<ReviewSystem>().reviewList[reviewNumber] = reviewRating;
         gameObject.transform.parent.gameObject.GetComponent<CustomerSpawnerController>().arrayOfAvailability[targetNumber] = false;
@@ -90,13 +91,13 @@ public class CustomerController : MonoBehaviour
                 Instantiate(moneyParticle, transform.position, transform.rotation);
                 Debug.Log("Order Correct");
                 Destroy(collider.gameObject);
-                CompleteOrder();
+                CompleteOrder(true);
             }
             else if (statusController != null && cookieProfile != orderedCookie)
             {
                 Instantiate(badParticle, transform.position, transform.rotation);
                 Debug.Log("Order Incorrect");
-                CompleteOrder();
+                CompleteOrder(false);
             }
         }
     }
