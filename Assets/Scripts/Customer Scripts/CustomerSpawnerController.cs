@@ -3,11 +3,11 @@ using UnityEngine;
 public class CustomerSpawnerController : MonoBehaviour
 {
 
-    public GameObject[] customerSprite = new GameObject[5];
+    public GameObject[] customerSprite = new GameObject[4];
     int reviewNumber = 0;
     public bool[] arrayOfAvailability = new bool[6];
     GameObject[] arrayOfGameObjects = new GameObject[6];
-    int spawnTime = 15;
+    int spawnTime = 10;
     int spawnTimer = 0;
 
     void Start() {
