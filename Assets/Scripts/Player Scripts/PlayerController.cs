@@ -6,7 +6,11 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     bool left;
+    public int money;
 
+    public void removeMoney(int moneySpent) {
+        money -= moneySpent;
+    }
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
