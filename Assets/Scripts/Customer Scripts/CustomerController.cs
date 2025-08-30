@@ -9,6 +9,7 @@ public class CustomerController : MonoBehaviour
     public Animator animator;
     float moveSpeed = 0.03F;
     bool hasOrderd = false;
+    PlayerController controller;
     public int targetNumber;
     public int reviewNumber;
     int timerValue = 0;
@@ -20,6 +21,7 @@ public class CustomerController : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        controller = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     void MoveToTarget() {
@@ -35,14 +37,14 @@ public class CustomerController : MonoBehaviour
 
     void CompleteOrder(bool isCorrect)
     {
+        if (reviewRating < 0) { reviewRating = 0; }
         if (isCorrect == false) { reviewRating = 0;}
         Debug.Log("Order Completed");
         gameObject.transform.parent.gameObject.GetComponent<ReviewSystem>().reviewList[reviewNumber] = reviewRating;
         gameObject.transform.parent.gameObject.GetComponent<CustomerSpawnerController>().arrayOfAvailability[targetNumber] = false;
+        controller.money += reviewRating*3;
         Destroy(gameObject);
     }
-
-// Stuff that I don't need to care about
     void FixedUpdate()
     {
         if (hasOrderd == false)
