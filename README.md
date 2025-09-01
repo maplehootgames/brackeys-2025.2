@@ -1,2 +1,2 @@
 # Brackeys Game Jam (2025.2)
-This is a test commit...
+The game jam that this project was made for has ended, we have now ceased development with no intent to resume
